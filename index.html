@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Лабораторна робота, форма, таблиця">
+    <meta name="description" content="Лабораторна робота з розширення веб-сторінки мовою HTML-5">
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Лабораторна робота №5</h1>
+    <h2>Варіант 7</h2>
+
+    <section id="form-section">
+        <h3>Форма для введення інформації</h3>
+        <form id="infoForm">
+            <div class="form-group">
+                <label for="fullname">1. ПІБ:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+                <span class="error-message" id="fullnameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="variant">2. Варіант:</label><br>
+                <input type="text" id="variant" name="variant" required>
+                <span class="error-message" id="variantError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">3. Контактний телефон:</label><br>
+                <input type="text" id="phone" name="phone" placeholder="(XXX)-XXX-XX-XX" required>
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="faculty">4. Факультет:</label><br>
+                <input type="text" id="faculty" name="faculty" required>
+                <span class="error-message" id="facultyError"></span>
+            </div>
+            <div class="form-group">
+                <label for="address">5. Адреса:</label><br>
+                <input type="text" id="address" name="address" placeholder="м. Назва міста" required>
+                <span class="error-message" id="addressError"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Надіслати">
+            </div>
+        </form>
+    </section>
+
+    <section id="table-section">
+        <h3>Інтерактивна таблиця (6x6)</h3>
+        <div id="interactiveTableContainer"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
